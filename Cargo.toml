@@ -1,0 +1,29 @@
+[package]
+name = "map2dotplot"
+version = "0.1.0"
+authors = ["Pierre Marijon <pierre.marijon@inria.fr>"]
+edition = "2018"
+
+#exclude = [""]
+
+description = "Read mapping file to generate dotplot"
+#documentation = "https://github.com/natir/map2dotplot"
+homepage = "https://github.com/natir/map2dotplot"
+repository = "https://github.com/natir/map2dotplot"
+readme = "Readme.md"
+license = "MIT"
+keywords = ["bioinformatics", "dotplot"]
+
+
+[dependencies]
+askama       = "0.8"
+bio          = "0.21"
+clap         = "2.31.2"
+csv          = "1"
+serde        = "1.0"
+serde_derive = "1.0"
+svg          = "0.5.12"
+
+[[bin]]
+name = "map2dotplot"
+path = "src/main.rs"
